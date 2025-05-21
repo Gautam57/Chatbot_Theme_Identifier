@@ -114,31 +114,6 @@ The application can be configured by modifying the following constants in the co
   - `pytesseract` - OCR for text extraction
   - `pandas` - Data handling and display
 
-
-## Troubleshooting
-
-1. **Tesseract OCR Errors**:
-   - Ensure Tesseract is installed and in your PATH
-   - For language-specific OCR, install appropriate language packs
-
-2. **Groq API Errors**:
-   - Verify your API key is set in the `.env` file
-   - Check your internet connection
-
-3. **Memory Issues**:
-   - Reduce chunk size if processing large documents
-   - Consider using smaller embedding models
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a pull request
-
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
