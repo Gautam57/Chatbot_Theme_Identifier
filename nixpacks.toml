@@ -1,0 +1,13 @@
+[phases.setup]
+nixPkgs = ["python311", "poppler_utils", "tesseract", "gcc"]
+
+[phases.install]
+cmds = [
+  "python -m venv /opt/venv",
+  ". /opt/venv/bin/activate",
+  "pip install --upgrade pip",
+  "pip install -r requirements.txt"
+]
+
+[start]
+cmd = "streamlit run src/streamlit_app.py --server.port=$PORT --server.address=0.0.0.0"
